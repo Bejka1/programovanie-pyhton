@@ -1,0 +1,23 @@
+import tkinter
+
+canvas=tkinter.Canvas(width=800,height=600)
+canvas.pack()
+
+#Pismeno B
+canvas.create_line(50,50,50,150,100,150,100,75,50,75,50,50,85,50,85,75,fill="red",width=5)
+#Pismeno E
+canvas.create_line(120,50,120,150,170,150,120,150,120,100,170,100,120,100,120,50,170,50,fill="blue",width=8)
+#Pismeno A
+canvas.create_line(180,150,200,50,220,150,210,90,190,90,fill="pink",width=5)
+#Pismeno T
+canvas.create_line(240,50,290,50,265,50,265,150,fill="green",width=8)
+#Pismeno A
+canvas.create_line(285,150,305,50,325,150,315,90,295,90,fill="yellow",width=7)
+
+#Pismeno B
+canvas.create_line(50,250,50,350,100,350,100,275,50,275,50,250,85,250,85,275,fill="purple",width=4)
+#Pismeno O
+canvas.create_oval(140,250,200,350,outline="black",width=6)
+#Pismeno J
+canvas.create_line(260,250,310,250,fill="cyan",width=4)
+canvas.create_arc(260,250,350,350,fill="magenta",width=6)
