@@ -1,0 +1,43 @@
+import tkinter
+
+canvas=tkinter.Canvas(width=800,height=600,background="white")
+canvas.pack()
+
+
+
+# Letter B
+
+canvas.create_arc(25, 50, 75, 90, start=270, extent=180, outline="blue", width=3)
+canvas.create_arc(20, 90, 80, 145, start=270, extent=180, outline="blue", width=3)
+
+#Pismeno E
+canvas.create_line(100,50,100,150,150,150,100,150,100,100,150,100,100,100,100,50,150,50,fill="red",width=6)
+#Pismeno A
+canvas.create_line(170,150,200,50,220,150,210,90,180,90,fill="pink",width=5)
+canvas.create_line(200,40,215,20,fill="pink",width=5)
+#Pismeno T
+canvas.create_line(240,50,290,50,265,50,265,150,fill="green",width=8)
+#Pismeno A
+canvas.create_line(285,150,305,50,325,150,315,90,295,90,fill="yellow",width=7)
+
+#Pismeno B
+canvas.create_arc(25,200,90,240, start=270, extent=180, outline="brown", width=9)
+canvas.create_arc(20,240,95,310, start=270, extent=180, outline="brown", width=9)
+#Pismeno O
+canvas.create_oval(115,200,165,310,outline="black",width=6)
+#Pismeno J
+canvas.create_line(185,200,235,200,fill="cyan",width=4)
+canvas.create_line(235,200,235,280,fill="cyan",width=4)
+canvas.create_arc(185,250,235,310, start=180, extent=180, outline="cyan", width=4)
+canvas.create_line(183,280,233,280,fill="white",width=4)
+#Pismeno K
+canvas.create_line(255,195,255,310,255,255,305,200,255,255,310,310, fill="orange", width=8)
+#Pismeno O
+canvas.create_oval(315,200,365,310,outline="purple", width=3)
+#Pismeno V
+canvas.create_line(385,200,405,310,425,200,fill="gray", width=6)
+#Pismeno A
+canvas.create_line(445,310,465,200,485,310,475,250,455,250,fill="violet", width=4)
+canvas.create_line(465,190,480,170,fill="violet", width=4)
+
+canvas.mainloop()
