@@ -1,0 +1,32 @@
+#nasa prva kalkulacka
+import cmath
+print(" ===Vitaj v kalkulacke====")
+print("Vyber si matematicku operaciu")
+print("1.===nasobenie===")
+print("2.===odcitanie===")
+print("3.===delenie===")
+print("4.===celociselne delenie")
+print("6.===kosinus===")
+print("7.===tangens===")
+print("8.===sinus===")
+
+
+
+x= int (input("Zadaj operaciu:"))
+a= float(input("Zadaj prve cislo: "))
+b= float (input("Zadaj druhe čislo: "))
+if x == 1:
+   print("nasobenie je:" , a*b)
+if x == 2:
+   print("odcitanie je:" , a-b)
+if x == 3:
+   print("delenie je:" , a/b)
+if x == 4:
+    print("celoceselne delenie je:" , a//b)
+if x == 6:
+    print("kosinus je:" , cmath.cos (a /  b))
+
+if x == 7:
+    print("tangens je:" , cmath.tan (a / b))
+if x ==8:
+    print("sinus je:" , cmath.tan (a / b))
