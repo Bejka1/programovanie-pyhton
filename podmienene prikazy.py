@@ -1,15 +1,25 @@
-body= int (input("Zadaj kolko bodov si ziskal v teste: "))
-if body >=90:
-    print("za", body, "ziskas znamku A")
+#nasa prva kalkulacka
+print(" ===Vitaj v kalkulacke====")
+print("Vyber si matematicku operaciu")
+print("1.===nasobenie===")
+print("2.===odcitanie===")
+print("3.===delenie===")
+print("4.===celociselne delenie")
 
-elif body >=80:
-    print ("za", body, "ziskas znamku B")
-elif body >=70:
-    print ("za", body, "ziskas znamku C")
-elif body >=60:
-    print ("za", body, "ziskas znamku D")
-elif body >=50:
-    print ("za", body, "ziskas znamku E")
+
+
+x= int (input("Zadaj operaciu:"))
+a= float(input("Zadaj prve cislo: "))
+b= float (input("Zadaj druhe čislo: "))
+if x == 1:
+   print("nasobenie je:" , a*b)
+if x == 2:
+   print("odcitanie je:" , a-b)
+if x == 3:
+   print("delenie je:" , a/b)
+if x == 4:
+    print("celoceselne delenie je:" , a//b)
     
-else:
-    print ("za", body, "dostavas FENIXA")
+
+
+   
