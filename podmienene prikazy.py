@@ -1,24 +1,21 @@
-#nasa prva kalkulacka
-print(" ===Vitaj v kalkulacke====")
-print("Vyber si matematicku operaciu")
-print("1.===nasobenie===")
-print("2.===odcitanie===")
-print("3.===delenie===")
-print("4.===celociselne delenie")
+import tkinter, random
 
-
-
-x= int (input("Zadaj operaciu:"))
-a= float(input("Zadaj prve cislo: "))
-b= float (input("Zadaj druhe čislo: "))
-if x == 1:
-   print("nasobenie je:" , a*b)
-if x == 2:
-   print("odcitanie je:" , a-b)
-if x == 3:
-   print("delenie je:" , a/b)
-if x == 4:
-    print("celoceselne delenie je:" , a//b)
+canvas= tkinter.Canvas(bg="white", width= 300,height=300)
+canvas.pack()
+for i in range(1000):
+    x= random.randrange(300)
+    y= random.randrange(300)
+    if y < 150:
+        if x <150:
+            farba = "red"
+        else:
+            farba="blue"
+    else:
+        farba= "green"
+        if y >150:
+            if x > 150:
+                farba="yellow"
+    canvas.create_oval(x-5,y-5,x+5,y+5,fill=farba, outline="")
     
 
 
