@@ -1,0 +1,26 @@
+#nasa prva kalkulacka
+import cmath
+podmienka= True
+while podmienka:
+
+    print(" ===Vitaj v kalkulacke====")
+    print("Vyber si matematicku operaciu")
+    print("1.===scitanie===")
+    print("2.===delenie===")
+    print("3.===nasobenie===")
+    print("4.===odcitanie===")
+    print("5.===celociselne delenie===")
+    print("7.===tangens===")
+    print("8.===sinus===")
+
+
+
+    b= int (input("Zadaj operaciu:"))
+
+
+    def scitanie():
+        x=int(input("Zadaj cislo jeden"))
+        y=int(input("Zadaj cislo dva"))
+        print(x+y)
+    if b == 1:
+        scitanie()
