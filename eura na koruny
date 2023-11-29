@@ -1,0 +1,6 @@
+def eura_na_koruny(eura):
+   koruny = round(eura * 30.123,2)
+   return koruny
+
+
+print("dostal si", 10,"eur , co je", eura_na_koruny(10), "korun")
