@@ -1,0 +1,96 @@
+import random
+import tkinter
+
+canvas = tkinter.Canvas(width=800,height=600)
+canvas.pack()
+
+
+
+farba = ["blue", "red", "cyan","pink"]
+farba1 = random.choice(farba)
+
+
+def Kruh():
+    farba = ["blue", "red", "cyan","pink"]
+    farba1 = random.choice(farba)
+    canvas.create_oval(x , y, x1, y1, fill=farba1, outline="black")
+    canvas.create_oval(x + 40 , y, x1+ 40, y1, fill=farba1, outline="black")
+    canvas.create_oval(x , y+ 40, x1, y1+ 40, fill=farba1, outline="black")
+    canvas.create_oval(x+40 , y  + 40, x1+40, y1+ 40, fill=farba1, outline="black")
+    canvas.create_oval(x+20,y + 20,x1 +20,y1 + 20,  fill="yellow", outline="black")
+    canvas.create_line(x+25,y+55,x1+0,y1-20,x+55,y+55,x1-20,y1-5,x+60,y+35,x1-15,y1+15, fill="black")
+
+x = 10
+y = 10
+x1 = 50
+y1 = 50
+
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+x = 10
+y = 90
+x1 = 50
+y1 = 130
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+x = 10
+y = 170
+x1 = 50
+y1 = 210
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+x = 10
+y = 250
+x1 = 50
+y1 = 290
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+x = 10
+y = 330
+x1 = 50
+y1 = 370
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+
+x = 10
+y = 410
+x1 = 50
+y1 = 450
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+x = 10
+y = 490
+x1 = 50
+y1 = 530
+for i in range(9):
+    Kruh()
+    x = x + 85
+    x1 = x1 + 85
+    farba = random.choice(farba)
+
+canvas.mainloop()
+_
