@@ -14,16 +14,25 @@ def trojuholnik(dlzka):
     for i in range(3):
         t.fd(dlzka)
         t.rt(120)
-def obdlznik(dlzka):
-    for i in range(4):
+def hviezda(dlzka):
+    for i in range(5):
         t.fd(dlzka)
-        t.rt(120)
+        t.rt(215)
 
 import turtle, random
-turtle.delay(5)
-t= turtle. Turtle()
+t= turtle.Turtle()
+turtle.delay(8)
 t.pensize(5)
 for i in range(20):
     posun()
+    if random randrange(2):
+        t.pencolor("red")
+        strvorec(30)
+
+        t.pencolor("blue")
+        trojuholnik(80)
+    else:
+        t.pencolor("pink")
+        hviezda(40)
     if random.randrange(2):
         t.pencolor("red")
