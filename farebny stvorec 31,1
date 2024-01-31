@@ -1,0 +1,17 @@
+def stvorec(d):
+    for i in range(4):
+        t.fr(d)
+        t.rt(90)
+
+
+
+import turtle, random
+turtle.delay(10)
+t= turtle.Turtle()
+t.fillcolour("red")
+for i in range (5):
+    t.begin_fill()
+    stvorec(50)
+    t.end_fill()
+    t.pu()
+    t.fd(60)
