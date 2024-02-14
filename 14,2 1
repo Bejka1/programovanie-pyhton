@@ -1,0 +1,10 @@
+import turtle
+turtle.delay(0)
+pole= []
+for i in range(60):
+    pole.append(turtle.Turtle())
+    pole[-1].seth(i*6)
+
+for t in pole:
+    t.fd(200)
+turtle.done()
