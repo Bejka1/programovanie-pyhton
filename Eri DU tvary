@@ -1,0 +1,47 @@
+import turtle
+
+turtle.delay(10)
+t1= turtle.Turtle()
+t2= turtle.Turtle()
+t3= turtle.Turtle()
+t4= turtle.Turtle()
+t1.pu()
+t1.setpos(-220, 200)
+t1.pd()
+for i in range(5):
+    t1.pensize(7)
+    t1.pencolor("purple")
+    t1.fd(90)
+    t1.rt(216)
+
+t2.pu()
+t2.setpos(-180,-50)
+t2.pd()
+for i in range(8):
+    t2.pensize(3)
+    t2.pencolor("pink")
+    t2.fd(45)
+    t2.rt(45)
+
+t3.pu()
+t3.setpos(30,250)
+t3.pd()
+for i in range(4):
+    t3.pensize(10)
+    t3.pencolor("yellow")
+    t3.fd(100)
+    t3.rt(90)
+
+
+t4.pu()
+t4.setpos(40,-55)
+t4.pd()
+for i in range(3):
+    t4.pensize(20)
+    t4.pencolor("blue")
+    t4.fd(100)
+    t4.rt(120)
+
+
+turtle.mainloop()
+
